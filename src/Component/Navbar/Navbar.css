@@ -1,0 +1,15 @@
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.name h3 {
+  margin-left: 15px;
+}
+.unorder {
+  margin-left: auto;
+}
