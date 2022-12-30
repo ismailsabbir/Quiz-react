@@ -1,0 +1,24 @@
+.cart-container {
+  margin-bottom: 50px;
+}
+.cart {
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+}
+.cart img {
+  width: 100%;
+  border-radius: 10px;
+  /* border-bottom: 1px solid gray; */
+}
+.midelpart {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart button {
+  width: 100%;
+  border: none;
+  background-color: aqua;
+}
