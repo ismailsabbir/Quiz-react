@@ -4,6 +4,8 @@ import QuestionType from "./Component/QuestionType/QuestionType";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layout/Main";
 import Question from "./Component/Questions/Question";
+import Blogs from "./Component/Blogs/Blogs";
+import Chart from "./Component/Chart/Chart";
 function App() {
   const router = createBrowserRouter([
     {
@@ -12,10 +14,16 @@ function App() {
       children: [
         {
           path: "/",
+          loader: () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`);
+          },
           element: <Home></Home>,
         },
         {
           path: "/home",
+          loader: () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`);
+          },
           element: <Home></Home>,
         },
         {
@@ -35,6 +43,17 @@ function App() {
           },
         },
         {
+          path: "/statistic",
+          element: <Chart></Chart>,
+          loader: () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`);
+          },
+        },
+        {
+          path: "/blog",
+          element: <Blogs></Blogs>,
+        },
+        {
           path: "*",
           element: (
             <div>
@@ -47,7 +66,7 @@ function App() {
     },
   ]);
   return (
-    <div>
+    <div className="App">
       <RouterProvider router={router} />
     </div>
   );

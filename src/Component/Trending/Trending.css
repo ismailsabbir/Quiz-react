@@ -1,0 +1,9 @@
+.trend-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.trend img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,19 +1,25 @@
 .nav {
   width: 100%;
 }
-
+.containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
 .navcomponent {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
 }
 .name {
   display: flex;
   align-items: center;
+  /* flex-direction: row; */
 }
 .name h3 {
   margin-left: 15px;

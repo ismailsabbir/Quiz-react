@@ -10,7 +10,7 @@ const Navbars = () => {
   return (
     <div className="nav">
       <Navbar bg="light" expand="lg" fixed="top" className="navcomponent">
-        <Container>
+        <Container className="containers">
           <Navbar.Brand href="#home" className="name">
             <img className="logo" src={image} alt="" />
             <h3>Quiz Aplication</h3>
@@ -25,10 +25,10 @@ const Navbars = () => {
               <Link className="navitem" to="/question">
                 Question
               </Link>
-              <Link className="navitem" to="statistic">
+              <Link className="navitem" to="/statistic">
                 Statistic
               </Link>
-              <Link className="navitem" to="blog">
+              <Link className="navitem" to="/blog">
                 Blog
               </Link>
 
