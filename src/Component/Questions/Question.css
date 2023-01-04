@@ -5,14 +5,26 @@
 }
 .question {
   margin-top: 110px;
-  width: 85%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid gray;
+  background-color: rgb(235, 231, 231);
 }
 .ques {
-  padding: 10px;
-  width: 500px;
+  margin-top: 30px;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  padding: 30px;
+  width: 50%;
+  text-align: left;
+  background-color: aliceblue;
+}
+@media only screen and (max-width: 600px) {
+  .ques {
+    width: 100%;
+  }
 }

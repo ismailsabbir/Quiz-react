@@ -6,25 +6,25 @@ const Popularcourse = () => {
     <div className="popular-container">
       <div className="popular">
         <div className="popular-left">
-          <h1>
-            Top ten most popular courses<br></br> for international students
-          </h1>
+          <h3>
+            Top ten most popular Quiz<br></br> for international students
+          </h3>
           <img src={image} alt="" />
-          <p>
+          <h6 className="text">
             Sample text. Click to select the text box.<br></br> Click again or
             double click to start editing <br></br> the text.
-          </p>
+          </h6>
         </div>
         <div className="popular-right">
-          <h6>HTML Course</h6>
-          <h6>CSS Course</h6>
-          <h6>Bootstrap Course</h6>
-          <h6>React Course</h6>
-          <h6>Javascript Course</h6>
-          <h6>Node js Course</h6>
-          <h6>Express Course</h6>
-          <h6>Mongodb Course</h6>
-          <div>
+          <h6>HTML Quiz</h6>
+          <h6>CSS Quiz</h6>
+          <h6>Bootstrap Quiz</h6>
+          <h6>React Quiz</h6>
+          <h6>Javascript Quiz</h6>
+          <h6>Node js Quiz</h6>
+          <h6>Express Quiz</h6>
+          <h6>Mongodb Quiz</h6>
+          <div className="left-arrow">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

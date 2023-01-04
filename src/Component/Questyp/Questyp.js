@@ -7,13 +7,15 @@ const Questyp = (props) => {
     <div className="cart-container">
       <div className="cart">
         <img src={logo} alt="" />
-        <div className="midelpart">
-          <p>Name:{name}</p>
-          <p>Question:{total}</p>
+        <div className="tab">
+          <div className="midelpart">
+            <h6>Name : {name}</h6>
+            <h6>Question : {total}</h6>
+          </div>
+          <Link to={`/quiz/${id}`}>
+            <button>Start {name} quiz</button>
+          </Link>
         </div>
-        <Link to={`/quiz/${id}`}>
-          <button>Start {name} quiz</button>
-        </Link>
       </div>
     </div>
   );

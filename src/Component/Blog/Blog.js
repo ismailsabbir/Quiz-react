@@ -13,7 +13,7 @@ const Blog = () => {
         </div>
         <div className="right-first">
           <h4>What is the purpose of react router</h4>
-          <p>
+          <h6>
             The Router in React JS is primarily used to create Single Page Web
             Apps. In the application, React Router is utilized to define various
             routes. When a user enters a URL into your browser and the URL route
@@ -29,13 +29,13 @@ const Blog = () => {
             offers various routing components as required by the application. If
             you wish to learn more about its applications, check out this blog:
             Navigate React Router programmatically.
-          </p>
+          </h6>
         </div>
       </div>
       <div className="blog-secound">
         <div className="left-secound">
           <h4>How does context Api work</h4>
-          <p>
+          <h6>
             The React Context API is a way for a React app to effectively
             produce global variables that can be passed around. This is the
             alternative to "prop drilling" or moving props from grandparent to
@@ -47,7 +47,7 @@ const Blog = () => {
             the parent of all the components that might need that store.
             Consumer as it so happens is a component that consumes and uses the
             state.
-          </p>
+          </h6>
         </div>
         <div className="right-secound">
           <img src={image1} alt="" />
@@ -59,7 +59,7 @@ const Blog = () => {
         </div>
         <div className="right-third">
           <h4>What is Useref react hook</h4>
-          <p>
+          <h6>
             The hook useRef is a bit similar to useState, it returns an object
             that has a property current inside which we can access using object
             dot notation. That property current takes the value of the argument
@@ -70,7 +70,7 @@ const Blog = () => {
             persist values between renders. It can be used to store a mutable
             value that does not cause a re-render when updated. It can be used
             to access a DOM element directly.
-          </p>
+          </h6>
         </div>
       </div>
     </div>

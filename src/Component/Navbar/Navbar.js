@@ -5,6 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import image from "../../../src/images/logo.webp";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import "./Navbar.css";
 const Navbars = () => {
   return (
@@ -31,6 +33,17 @@ const Navbars = () => {
               <Link className="navitem" to="/blog">
                 Blog
               </Link>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button className="search-btn " variant="outline-success">
+                  Search
+                </Button>
+              </Form>
 
               {/* <Nav.Link href="home">Home</Nav.Link> */}
               {/* <Nav.Link href="question">Question</Nav.Link> */}

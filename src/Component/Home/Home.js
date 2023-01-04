@@ -20,12 +20,33 @@ const Home = () => {
             <div className="detal">
               <h1>ONLINE COURSE</h1>
               <h4>IMPORVE YOUR SKILLS</h4>
-              <button>LEARN MORE</button>
+              <button>
+                LEARN MORE
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </p>
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div className="containert">
+        <h4>
+          <u>Our Quiz</u>{" "}
+        </h4>
         <div className="carts-contant">
           {questiontyps.map((questiontyp) => (
             <Questyp questiontyp={questiontyp} key={questiontyp.id}></Questyp>

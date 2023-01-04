@@ -12,17 +12,21 @@ const Option = (props) => {
   };
   return (
     <div>
-      <div className="options">
-        <ul>
-          <li>
-            <p onClick={() => checkanswer(option, correct)} className="option">
-              {props.option}
-            </p>
-          </li>
-        </ul>
+      <div>
+        <div className="options">
+          <ul>
+            <li>
+              <h6
+                onClick={() => checkanswer(option, correct)}
+                className="option"
+              >
+                {props.option}
+              </h6>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
-
 export default Option;

@@ -1,7 +1,20 @@
 .options {
-  border: 1px solid gray;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
   margin: 10px;
   width: 90%;
+  cursor: pointer;
+  background-color: rgb(42, 60, 61);
+  color: white;
+  padding: 5px;
+}
+.options:hover {
+  background-color: rgb(43, 103, 103);
+  color: white;
+}
+.options h6 {
+  font-size: 17px;
+  font-weight: 400;
 }
 .answer {
   border: 40px solid brown;
