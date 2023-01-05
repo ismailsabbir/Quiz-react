@@ -5,9 +5,34 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-answer {
+  background-color: rgb(139, 212, 139);
+  color: green;
+  padding: 10px;
+  border-radius: 10px;
+}
+.wrong-answer {
+  color: brown;
+  background-color: rgb(227, 151, 151);
+  padding: 10px;
+  border-radius: 10px;
+}
+.corect-ans {
+  color: blue;
+}
+.corect-ans strong {
+  color: green;
+  margin-left: 8px;
+}
 .question-div {
   margin-bottom: 10px;
   border: 1px solid gainsboro;
+  /* border: 10px solid brown; */
   position: relative;
   padding: 10px;
   border-radius: 10px;

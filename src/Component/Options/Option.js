@@ -4,13 +4,13 @@ const Option = (props) => {
   const option = props.option;
   const correct = props.correct;
 
-  const checkanswer = (option, correct) => {
-    if (option === correct) {
-      alert("This is right answer");
-    } else {
-      alert("This is wrong answer");
-    }
-  };
+  // const checkanswer = (option, correct) => {
+  //   if (option === correct) {
+  //     alert("This is right answer");
+  //   } else {
+  //     alert("This is wrong answer");
+  //   }
+  // };
 
   return (
     <div>
@@ -19,7 +19,8 @@ const Option = (props) => {
           <ul>
             <li>
               <h6
-                onClick={() => checkanswer(option, correct)}
+                // onClick={() => checkanswer(option, correct)}
+                onClick={() => props.handler(option, correct)}
                 className="option"
               >
                 {props.option}

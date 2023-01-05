@@ -1,15 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Option from "../Options/Option";
 import "./Quizquestion.css";
 const Quizquestion = (props) => {
   console.log(props.quizquestion);
   const { question, options, correctAnswer } = props.quizquestion;
+  const [corect, setcorect] = useState([]);
   const corectanswer = (correctanswers) => {
-    alert(correctanswers);
+    let newcorrect = [...corect, correctanswers];
+    setcorect(newcorrect);
+
+    //  const ele = document.getElementsByClassName("ques-1");
+    // ele.setAttribute("disabled", true);
   };
+  const [check, setcheck] = useState();
+  const [wrong, setwrong] = useState();
+  const givalert = (correctanswers, option) => {
+    if (option === correctanswers) {
+      let newcheck = correctanswers;
+      setcheck(newcheck);
+      // alert("This is right answer");
+      // message = <h4>Right answer</h4>;
+    } else if (option !== correctanswers) {
+      let newwrong = option;
+      setwrong(newwrong);
+      // alert("This is wrong answer");
+      // message = <h4>Wrong answer</h4>;
+    }
+  };
+  // console.log(check);
   return (
     <div>
       <div className="question-div">
+        <div className="status">
+          {check && <h6 className="right-answer">This is Right Answer</h6>}
+          {wrong && <h6 className="wrong-answer">This is wrong Answer</h6>}
+        </div>
+        <div>
+          <h6 className="corect-ans">
+            Correct Answer:<strong>{corect}</strong>{" "}
+          </h6>
+        </div>
+
         <div onClick={() => corectanswer(correctAnswer)} className="icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +48,7 @@ const Quizquestion = (props) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 eye"
           >
             <path
               strokeLinecap="round"
@@ -31,9 +62,14 @@ const Quizquestion = (props) => {
             />
           </svg>
         </div>
+
         <h6 className="ques-1">Quiz : {question}</h6>
         {options.map((option) => (
-          <Option option={option} correct={correctAnswer}></Option>
+          <Option
+            handler={givalert}
+            option={option}
+            correct={correctAnswer}
+          ></Option>
         ))}
       </div>
     </div>
