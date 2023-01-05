@@ -3,6 +3,7 @@ import "./Option.css";
 const Option = (props) => {
   const option = props.option;
   const correct = props.correct;
+
   const checkanswer = (option, correct) => {
     if (option === correct) {
       alert("This is right answer");
