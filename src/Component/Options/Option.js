@@ -11,6 +11,7 @@ const Option = (props) => {
       alert("This is wrong answer");
     }
   };
+
   return (
     <div>
       <div>

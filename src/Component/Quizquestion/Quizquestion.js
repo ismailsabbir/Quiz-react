@@ -4,11 +4,13 @@ import "./Quizquestion.css";
 const Quizquestion = (props) => {
   console.log(props.quizquestion);
   const { question, options, correctAnswer } = props.quizquestion;
-
+  const corectanswer = (correctanswers) => {
+    alert(correctanswers);
+  };
   return (
     <div>
       <div className="question-div">
-        <div className="icon">
+        <div onClick={() => corectanswer(correctAnswer)} className="icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
