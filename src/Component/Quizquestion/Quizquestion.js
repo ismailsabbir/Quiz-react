@@ -40,7 +40,6 @@ const Quizquestion = (props) => {
             Correct Answer:<strong>{corect}</strong>{" "}
           </h6>
         </div>
-
         <div onClick={() => corectanswer(correctAnswer)} className="icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
